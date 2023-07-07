@@ -39,3 +39,14 @@ window.onscroll = () => {
     menuIcon.classList.remove("fa-x");
     navbar.classList.remove("active");
 };
+
+new ScrollReveal({
+    reset: true, distance: '80px', duration: 2000, delay: 200
+});
+
+ScrollReveal().reveal('.header', {origin: 'top', duration: 2700});
+ScrollReveal().reveal('.home-section h1', {origin: 'left', duration: 1500});
+ScrollReveal().reveal('.home-section h5, .home-section p', {origin: 'left', duration: 1800});
+ScrollReveal().reveal('.home-section p', {origin: 'left', duration: 2300});
+
+
