@@ -40,6 +40,13 @@ window.onscroll = () => {
     navbar.classList.remove("active");
 };
 
+let darkModeIcon = document.querySelector('#darkModeIcon');
+darkModeIcon.onclick = () => {
+    darkModeIcon.classList.toggle("fa-solid");
+    darkModeIcon.classList.toggle("fa-regular");
+    document.body.classList.toggle('darkMode');
+}
+
 new ScrollReveal({
     reset: true, distance: '80px', duration: 2000, delay: 200
 });
