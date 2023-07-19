@@ -19,7 +19,6 @@ let sections = document.querySelectorAll('section');
 let navLinks = document.querySelectorAll('header nav a')
 
 window.onscroll = () => {
-
     let header = document.querySelector(".header");
     sections.forEach(sec => {
         let top = window.scrollY;
@@ -46,6 +45,30 @@ darkModeIcon.onclick = () => {
     darkModeIcon.classList.toggle("fa-regular");
     document.body.classList.toggle('darkMode');
 }
+
+const counterAnim = (qSelector, start = 0, end, duration = 1000) => {
+    const target = document.querySelector(qSelector);
+    let startTimestamp = null;
+    const step = (timestamp) => {
+        if (!startTimestamp) startTimestamp = timestamp;
+        const progress = Math.min((timestamp - startTimestamp) / duration, 1);
+        target.innerText = Math.floor(progress * (end - start) + start);
+        if (progress < 1) {
+            window.requestAnimationFrame(step);
+        }
+    };
+    window.requestAnimationFrame(step);
+};
+
+/*function isInViewport(el) {
+    const rect = el.getBoundingClientRect();
+    return (
+        rect.top >= 0 &&
+        rect.left >= 0 &&
+        rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+        rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+    );
+}*/
 
 new ScrollReveal({
     reset: true, distance: '80px', duration: 2000, delay: 200
