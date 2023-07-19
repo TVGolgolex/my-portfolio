@@ -57,9 +57,9 @@ body {
     transition: .7s;
 }
 
-* {
+/** {
     border: 2px solid red;
-}
+}*/
 
 ::selection {
     background-color: var(--primary);
@@ -297,29 +297,29 @@ body {
 
 /* ================================================== */
 
-.about-me-section {
+.skills-section {
     background-color: var(--secondary);
     border-radius: 6px;
-    padding: 3em 5em;
     display: flex;
     flex-direction: row;
     gap: 6em;
     justify-content: space-between;
+    padding: 3em 5em;
     margin: 0 10%;
 }
 
-.about-me-section h2 {
+.skills-section h2 {
     letter-spacing: -2px;
     font-weight: 600;
     margin: 0;
     font-size: var(--h2);
 }
 
-.about-me-section .section-1 {
+.skills-section .section-1 {
     width: 30%;
 }
 
-.about-me-section .section-2 {
+.skills-section .section-2 {
     display: flex;
     flex-wrap: wrap;
     width: 70%;
@@ -328,27 +328,27 @@ body {
     flex-direction: row;
 }
 
-.about-me-section .section-1 p {
+.skills-section .section-1 p {
     font-size: var(--p);
     letter-spacing: normal;
     line-height: 150%;
     color: var(--text);
 }
 
-.about-me-section .section-2 .number-count {
+.skills-section .section-2 .number-count {
     font-size: var(--subtitle);
     font-weight: 800;
     color: var(--accent);
 }
 
-.about-me-section .section-2 .skill {
+.skills-section .section-2 .skill {
     font-size: var(--p);
     letter-spacing: normal;
     line-height: 150%;
     color: var(--text);
 }
 
-.about-me-section .section-2 .since-date {
+.skills-section .section-2 .since-date {
     font-size: var(--sub);
     font-weight: 300;
     letter-spacing: normal;
@@ -357,7 +357,7 @@ body {
 }
 
 @media (max-width: 995px) {
-    .about-me-section {
+    .skills-section {
         background-color: var(--secondary);
         border-radius: 6px;
         padding: 3em 5em;
@@ -370,7 +370,7 @@ body {
 }
 
 @media (max-width: 683px) {
-    .about-me-section {
+    .skills-section {
         background-color: var(--secondary);
         border-radius: 6px;
         padding: 3em 5em;
@@ -380,11 +380,11 @@ body {
         text-align: center;
     }
 
-    .about-me-section .section-1 {
+    .skills-section .section-1 {
         width: 100%;
     }
 
-    .about-me-section .section-2 {
+    .skills-section .section-2 {
         display: flex;
         flex-wrap: wrap;
         width: 100%;
@@ -397,14 +397,19 @@ body {
 /* ================================================== */
 
 .projects-section {
-    padding: 10em 10em;
+    padding: 5rem 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    gap: 2em;
 }
 
 .projects-section .heading {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
 }
 
 .projects-section .heading h2 {
@@ -427,135 +432,156 @@ body {
     margin-block-end: 2rem;
 }
 
-.projects-section .projects {
+.projects-section .cards {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: stretch;
+    width: 100%;
+    height: 100%;
 }
 
-.projects-section .projects .project-instance {
-    width: 30%;
+.projects-section .cards .card {
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: space-between;
     align-items: center;
+    width: 30%;
+    padding: 3em 3em 3em 3em;
     position: relative;
-    padding: 3em;
+    gap: 1.5em;
 }
 
-.projects-section .projects .project-instance-bg {
-    background-color: var(--text);
-    opacity: 3%;
+.projects-section .cards .card .bg {
+    background-color: var(--secondary);
+    opacity: 35%;
     position: absolute;
     height: 100%;
     width: 100%;
     border-radius: 6px;
-    flex: 1;
+    z-index: -5;
     top: 0;
     left: 0;
-    z-index: -5;
 }
 
-.projects-section .projects .project-instance img {
-    max-width: 80px;
-    max-height: 80px;
-}
-
-.projects-section .projects .project-instance h3 {
-    padding-top: 1.3rem;
+.projects-section .cards .card h3 {
     letter-spacing: -2px;
-    font-weight: 600;
+    font-weight: 700;
     margin: 0;
+    text-align: center;
+    line-height: 30px;
     font-size: var(--h2);
 }
 
-.projects-section .projects .project-instance h4 {
-    padding-top: 0.7rem;
-    letter-spacing: normal;
-    font-weight: 400;
-    margin: 0;
-    font-size: var(--sub);
-}
-
-.projects-section .projects .project-instance h3.highlighting {
-    background: linear-gradient(180deg, transparent 70%, var(--accent) 50%);
-}
-
-.projects-section .projects .project-instance h3.highlighting::before {
-    opacity: 10%;
-}
-
-.projects-section .projects .project-instance p {
-    padding-top: 1.3rem;
+.projects-section .cards .card p {
     font-size: var(--p);
     letter-spacing: normal;
+    text-align: center;
     line-height: 150%;
     color: var(--text);
 }
 
-.projects-section .projects .project-instance .socials {
-    padding-top: 2rem;
+.projects-section .cards .card img {
+    max-width: 80px;
+    max-height: 80px;
+}
+
+.projects-section .cards .card .promo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.projects-section .cards .card .promo h4 {
+    letter-spacing: normal;
+    font-weight: 400;
+    text-align: center;
+    margin: 0;
+    font-size: var(--sub);
+}
+
+.projects-section .cards .card .promo a {
+    text-decoration: none;
+}
+
+.projects-section .cards .card .promo a p {
+    letter-spacing: normal;
+    font-weight: 300;
+    margin: 0;
+    font-size: var(--small);
+}
+
+.projects-section .cards .card .state p {
+    font-weight: 200;
+    font-size: var(--small);
+}
+.projects-section .cards .card .state.negative {
+    padding: 2px 5px;
+    background-color: #c6152a;
+    color: white;
+    z-index: 2;
+    border-radius: 6px;
+    display: inline-block;
+    font-size: var(--sub);
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+.projects-section .cards .card .promo a p:hover {
+    font-weight: 500;
+    color: var(--accent);
+    transition: .5s;
+}
+
+.projects-section .cards .card .socials {
     display: flex;
     flex-direction: row;
     gap: 1rem;
 }
 
-.projects-section .projects .project-instance .socials i {
+.projects-section .cards .card .socials i {
     color: var(--accent);
 }
 
-@media (max-width: 1217px) {
-    .projects-section .projects {
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        align-items: center;
-        grid-row-gap: 3rem;
-    }
-
-    .projects-section .projects .project-instance {
-        width: 80%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        position: relative;
-        padding: 3em;
-    }
+.projects-section .cards .card .visit-button {
+    padding: 1em 2em;
+    background-color: var(--primary);
+    color: var(--text);
+    z-index: 2;
+    border-radius: 6px;
+    display: inline-block;
+    transition: transform ease 0.2s,
+                box-shadow ease 0.2s;
+    font-size: var(--sub);
+    text-decoration: none;
+    font-weight: 300;
+    white-space: nowrap;
 }
 
-@media (max-width: 639px) {
+.projects-section .cards .card .visit-button:hover {
+    box-shadow: 0 20px 80px -10px var(--primary);
+    transform: translate(0, -7px);
+}
 
-    .projects-section {
-        padding: 10rem 5rem;
-        width: 100% !important;
-    }
-
-    .projects-section .projects {
+@media (max-width: 961px) {
+    .projects-section .cards {
         display: flex;
-        justify-content: center;
-        flex-direction: column;
-        align-items: center;
         grid-row-gap: 3rem;
-        width: 100% !important;
-    }
-
-    .projects-section .projects .project-instance {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
         width: 100%;
+        height: 100%;
+    }
+    .projects-section .cards .card {
         display: flex;
         flex-direction: column;
-        justify-content: flex-start;
+        justify-content: space-between;
         align-items: center;
+        width: 100%;
+        padding: 3em 3em 3em 3em;
         position: relative;
-        padding: 10rem;
+        gap: 1.5em;
     }
-
-    .projects-section .projects .project-instance .socials {
-        padding-top: 2rem;
-        display: flex;
-        flex-direction: row;
-        gap: 1rem;
-        width: 100% !important;
-    }
-
 }
