@@ -1,0 +1,134 @@
+.home-section {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 0 10% 90px;
+}
+
+.home-section .container {
+    max-width: 650px;
+}
+
+@media (max-width: 995px) {
+    .home-section .container {
+        padding-top: 90px;
+    }
+}
+
+.home-section .container h1 {
+    font-size: var(--h1);
+    line-height: 50px;
+    font-weight: 700;
+}
+
+.home-section .container h1 > span {
+    color: var(--accent);
+}
+
+@media (max-width: 475px) {
+    .home-section {
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        padding: 8rem 10% 90px;
+    }
+}
+
+/* ============================================================= */
+
+.context-section {
+    background-color: var(--secondary);
+    border-radius: 6px;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    justify-content: space-between;
+    padding: 3em 5em;
+    margin: 0 10%;
+}
+
+.context-section h2 {
+    letter-spacing: -2px;
+    font-weight: 600;
+    margin: 0;
+    font-size: var(--h2);
+}
+
+.context-section ul {
+    list-style: none;
+}
+
+.context-section a {
+    text-decoration: none;
+    color: var(--text);
+}
+
+.context-section a:hover {
+    color: var(--accent);
+}
+
+.context-section li::before {
+    content: "-";
+    color: var(--accent);
+    display: inline-block;
+    width: 2em;
+    margin-left: -1em;
+}
+
+.context-section li {
+    color: var(--text);
+}
+
+.context-section strong {
+    color: var(--text);
+    font-weight: 600;
+}
+
+@media (max-width: 995px) {
+    .context-section {
+        background-color: var(--secondary);
+        border-radius: 6px;
+        padding: 3em 5em;
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+        justify-content: space-between;
+        margin: 40px 5% 0;
+    }
+}
+
+@media (max-width: 475px) {
+    .context-section {
+        background-color: var(--secondary);
+        border-radius: 6px;
+        padding: 3rem 5rem;
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+        justify-content: space-between;
+        margin: 10rem 5% 0;
+    }
+}
+
+
+@media (max-width: 683px) {
+    .context-section {
+        background-color: var(--secondary);
+        border-radius: 6px;
+        padding: 3em 5em;
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+    }
+}
+
+@media (max-width: 415px) {
+    .context-section {
+        background-color: var(--secondary);
+        border-radius: 6px;
+        padding: 3em 2em;
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+    }
+}
