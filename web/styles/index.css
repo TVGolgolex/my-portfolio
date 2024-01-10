@@ -103,6 +103,7 @@
 .skills-section .section-2 .number-count, .skills-section .section-3 .number-count {
     font-size: var(--subtitle);
     font-weight: 800;
+    transform: translate(-1em);
     color: var(--accent);
 }
 

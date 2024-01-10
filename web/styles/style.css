@@ -5,15 +5,14 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
-
 }
 
 :root {
-    --text: #050505;
-    --background: #fafafa;
-    --primary: #adcce6;
-    --secondary: #d8e7f3;
-    --accent: #3a86c5;
+    --text: #00000a;
+    --background: #f5f5ff;
+    --primary: #1512f8;
+    --secondary: #ce74fb;
+    --accent: #e847fa;    
     --footer-bg: #212529;
 
     --h1: 48px;
@@ -25,11 +24,11 @@
 }
 
 .darkMode {
-    --text: #fafafa;
-    --background: #050505;
-    --primary: #adcce6;
-    --secondary: #0c1b27;
-    --accent: #89b7dc;
+    --text: #f5f5ff;
+    --background: #00000a;
+    --primary: #0b07ed;
+    --secondary: #5e048b;
+    --accent: #a605b8;
     --footer-bg: #1c2023;
 }
 
