@@ -9,11 +9,11 @@
 
 :root {
     --text: #00000a;
-    --background: #f5f5ff;
-    --primary: #1512f8;
-    --secondary: #ce74fb;
-    --accent: #e847fa;    
-    --footer-bg: #212529;
+    --background: #edf7f8;
+    --primary: #409da6;
+    --secondary: #a3d7dc;
+    --accent: #6bbec6;    
+    --footer-bg: #153437;
 
     --h1: 48px;
     --h2: 32px;
@@ -25,11 +25,11 @@
 
 .darkMode {
     --text: #f5f5ff;
-    --background: #00000a;
-    --primary: #0b07ed;
-    --secondary: #5e048b;
-    --accent: #a605b8;
-    --footer-bg: #1c2023;
+    --background: #153437;
+    --primary: #409da6;
+    --secondary: #409da6;
+    --accent: #6bbec6;
+    --footer-bg: #153437;
 }
 
 html {
@@ -79,6 +79,10 @@ body {
     justify-content: space-between;
     align-items: center;
     z-index: 100;
+}
+
+.header .logo-icon img {
+    max-height: 50px;
 }
 
 .header .logo {

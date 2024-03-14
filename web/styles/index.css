@@ -172,6 +172,44 @@
 
 }
 
+@media (max-width: 418px) {
+    .skills-section {
+        background-color: var(--secondary);
+        border-radius: 6px;
+        margin-top: 50%;
+        padding: 3em 2em;
+        display: flex;
+        flex-direction: column;
+        gap: 2em;
+    }
+
+    .skills-section .container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .skills-section .section-2 {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        grid-column-gap: 9em;
+        grid-row-gap: 1.2em;
+        flex-direction: row;
+        align-items: unset;
+    }
+
+    .skills-section .section-3 {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        grid-column-gap: 9em;
+        grid-row-gap: 1.2em;
+        flex-direction: row;
+        align-items: unset;
+    }
+}
+
 @media (max-width: 682px) {
     .skills-section {
         background-color: var(--secondary);
@@ -212,7 +250,8 @@
 /* ================================================== */
 
 .projects-section {
-    padding: 5rem 5rem;
+    margin-top: 10%;
+    padding: 5rem 10%;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -380,9 +419,8 @@
 }
 
 @media (max-width: 961px) {
-
     .projects-section {
-        padding: 5rem 2rem;
+        padding: 5rem 10%;
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
@@ -395,6 +433,39 @@
         display: flex;
         grid-row-gap: 3rem;
         flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+    }
+    .projects-section .cards .card {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        padding: 3em 3em 3em 3em;
+        position: relative;
+        gap: 1.5em;
+    }
+}
+
+@media (max-width: 418px) {
+    .projects-section {
+        margin-top: 50%;
+        padding: 5rem 10%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 50%;
+        width: 100%;
+        gap: 2em;
+    }
+
+    .projects-section .cards {
+        display: flex;
+        grid-row-gap: 3rem;
         justify-content: center;
         align-items: center;
         width: 100%;
