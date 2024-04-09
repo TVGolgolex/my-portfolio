@@ -458,7 +458,6 @@
         flex-direction: column;
         justify-content: flex-start;
         align-items: center;
-        gap: 50%;
         width: 100%;
         gap: 2em;
     }
@@ -472,6 +471,187 @@
         height: 100%;
     }
     .projects-section .cards .card {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        padding: 3em 3em 3em 3em;
+        position: relative;
+        gap: 1.5em;
+    }
+}
+
+/* ================================================== */
+
+.design-section {
+    margin-top: 10%;
+    padding: 5rem 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    gap: 2em;
+}
+
+.design-section .heading {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.design-section .heading h2 {
+    display: flex;
+    justify-content: center;
+    letter-spacing: -2px;
+    font-weight: 600;
+    margin: 0;
+    font-size: var(--h2);
+}
+
+.design-section .heading p {
+    display: flex;
+    justify-content: center;
+    font-size: var(--p);
+    letter-spacing: normal;
+    line-height: 150%;
+    color: var(--text);
+    margin-block-start: 1rem;
+    margin-block-end: 2rem;
+}
+
+.design-section .cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch;
+    width: 100%;
+    height: 100%;
+}
+
+.design-section .cards .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 30%;
+    padding: 3em 3em 3em 3em;
+    position: relative;
+    gap: 1.5em;
+}
+
+.design-section .cards .card .bg {
+    opacity: 35%;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    border-radius: 6px;
+    z-index: -5;
+    top: 0;
+    left: 0;
+}
+
+.design-section .cards .card h4 {
+    letter-spacing: -2px;
+    font-weight: 700;
+    margin: 0;
+    text-align: center;
+    line-height: 30px;
+    font-size: var(--h2);
+}
+
+.design-section .cards .card p {
+    font-size: var(--p);
+    letter-spacing: normal;
+    text-align: center;
+    line-height: 150%;
+    color: var(--text);
+}
+
+.design-section .cards .card img {
+    max-height: 600px;
+    max-width: 80%;
+}
+
+.design-section .cards .card .socials {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+.design-section .cards .card .visit-button {
+    padding: 1em 2em;
+    color: var(--text);
+    z-index: 2;
+    border-radius: 6px;
+    display: inline-block;
+    transition: transform ease 0.2s,
+    box-shadow ease 0.2s;
+    font-size: var(--sub);
+    text-decoration: none;
+    font-weight: 300;
+    white-space: nowrap;
+}
+
+.design-section .cards .card .visit-button:hover {
+    box-shadow: 0 20px 80px -10px var(--background);
+    transform: translate(0, -7px);
+}
+
+@media (max-width: 961px) {
+    .design-section {
+        padding: 5rem 10%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        width: 100%;
+        gap: 2em;
+    }
+
+    .design-section .cards {
+        display: flex;
+        grid-row-gap: 3rem;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+    }
+    .design-section .cards .card {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        padding: 3em 3em 3em 3em;
+        position: relative;
+        gap: 1.5em;
+    }
+}
+
+@media (max-width: 418px) {
+    .design-section {
+        margin-top: 50%;
+        padding: 5rem 10%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        width: 100%;
+        gap: 2em;
+    }
+
+    .design-section .cards {
+        display: flex;
+        grid-row-gap: 3rem;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+    }
+    .design-section .cards .card {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
