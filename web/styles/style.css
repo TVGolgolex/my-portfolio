@@ -8,12 +8,13 @@
 }
 
 :root {
-    --text: #00000a;
-    --background: #edf7f8;
-    --primary: #409da6;
-    --secondary: #a3d7dc;
-    --accent: #6bbec6;    
-    --footer-bg: #153437;
+    --text: #071210;
+    --background: #edf8f5;
+    --primary: #59bba4;
+    --secondary: #a5dacd;
+    --accent: #347f6d;
+    --footer-bg: #120529;
+    --footer-text: var(--background);
 
     --h1: 48px;
     --h2: 32px;
@@ -24,12 +25,13 @@
 }
 
 .darkMode {
-    --text: #f5f5ff;
-    --background: #153437;
-    --primary: #409da6;
-    --secondary: #409da6;
-    --accent: #6bbec6;
-    --footer-bg: #153437;
+    --text: #edf8f5;
+    --background: #120529;
+    --primary: #59bba4;
+    --secondary: #347f6d;
+    --accent: #59bba4;
+    --footer-bg: #347f6d;
+    --footer-text: var(--text);
 }
 
 html {
@@ -82,7 +84,7 @@ body {
 }
 
 .header .logo-icon img {
-    max-height: 50px;
+    height: 40px;
 }
 
 .header .logo {
@@ -144,6 +146,11 @@ body {
 }
 
 @media (max-width: 995px) {
+
+    .header .logo-icon img {
+        height: 20px;
+    }
+
     .navbar .options {
         display: flex;
         flex-wrap: nowrap;
@@ -207,7 +214,7 @@ body {
 
 .header.sticky {
     background: var(--background);
-    /*box-shadow: 0 2px 80px -25px var(--primary);*/
+    /*box-shadow: 0 2px 80px -25px var(--text);*/
 }
 
 .home .opp-bg {
@@ -221,6 +228,21 @@ body {
 
 /* ================================================== */
 
+.not-up-to-date {
+    font-size: var(--p);
+    opacity: 50%;
+}
+
+@media (max-width: 961px) {
+    .not-up-to-date {
+        font-size: var(--p);
+        opacity: 50%;
+        text-align: center;
+    }
+}
+
+/* ================================================== */
+
 .footer-section {
     margin: 4rem;
     padding: 3rem 7rem;
@@ -229,7 +251,7 @@ body {
     align-items: flex-start;
     gap: 2em;
     border-radius: 8px;
-    background-color: var(--text);
+    background-color: var(--footer-bg);
     color: var(--background);
 }
 
@@ -253,18 +275,18 @@ body {
     text-decoration: none;
     font-weight: 500;
     letter-spacing: -0.5px;
-    color: var(--background);
+    color: var(--footer-text);
 }
 
 .footer-section .logo-container p {
     font-size: var(--subtitle);
     font-weight: 250;
-    color: var(--background);
+    color: var(--footer-text);
 }
 
 .footer-section .logo-container .logo > span {
     font-weight: 700;
-    color: var(--accent);
+    color: var(--primary);
 }
 
 .footer-section .sections .section {
@@ -275,9 +297,7 @@ body {
 }
 
 .footer-section .sections .section .title {
-    color: var(--background);
-    background-color: var(--text);
-    opacity: 85%;
+    color: var(--footer-text);
     font-weight: 600;
     font-size: var(--sub);
     text-transform: uppercase;
@@ -285,7 +305,7 @@ body {
 
 .footer-section .sections .section a {
     text-decoration: none;
-    color: var(--background);
+    color: var(--footer-text);
     font-size: var(--p);
     letter-spacing: normal;
     line-height: 150%;
@@ -294,7 +314,7 @@ body {
 .footer-section .sections .section a:hover {
     color: var(--primary);
     transition: .5s;
-    font-weight: 500;
+    font-weight: 800;
 }
 
 .footer-section .made-by {
@@ -308,6 +328,8 @@ body {
 
 .footer-section .made-by p {
     font-weight: 250;
+    font-size: 10px;
+    color: var(--footer-text);
 }
 
 .footer-section .made-by i {
@@ -323,7 +345,7 @@ body {
         align-items: flex-start;
         gap: 2em;
         border-radius: 8px;
-        background-color: var(--text);
+        background-color: var(--footer-bg);
         color: var(--background);
     }
 
@@ -349,5 +371,10 @@ body {
 @media (max-width: 475px) {
     .footer-section #spacing, .footer-section #golgolex-tag {
         display: none;
+    }
+
+    .footer-section {
+        align-items: center;
+        text-align: center !important;
     }
 }

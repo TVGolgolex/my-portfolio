@@ -83,6 +83,8 @@ ScrollReveal().reveal('.skills-section .section-1', {origin: 'left', duration: 1
 ScrollReveal().reveal('.skills-section .section-2', {origin: 'bottom', duration: 1500});
 ScrollReveal().reveal('.skills-section .section-3', {origin: 'right', duration: 1500});
 
+ScrollReveal().reveal('.not-up-to-date', {origin: 'bottom', duration: 1500});
+
 ScrollReveal().reveal('.projects-section .heading', {origin: "left", duration: 1500});
 ScrollReveal().reveal('.projects-section .cards', {origin: "bottom", duration: 4500});
 
