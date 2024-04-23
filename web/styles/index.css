@@ -269,7 +269,8 @@
 .projects-section .heading h2 {
     display: flex;
     justify-content: center;
-    letter-spacing: -2px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
     font-weight: 600;
     margin: 0;
     font-size: var(--h2);
@@ -504,7 +505,8 @@
 .design-section .heading h2 {
     display: flex;
     justify-content: center;
-    letter-spacing: -2px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
     font-weight: 600;
     margin: 0;
     font-size: var(--h2);
