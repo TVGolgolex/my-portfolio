@@ -5,27 +5,27 @@
     padding: 0 10% 90px;
 }
 
-.home-section .container {
+.home-section .left-container {
     max-width: 650px;
 }
 
 @media (max-width: 995px) {
-    .home-section .container {
+    .home-section .left-container {
         padding-top: 90px;
     }
 }
 
-.home-section .container h1 {
+.home-section .left-container h1 {
     font-size: var(--h1);
     line-height: 50px;
     font-weight: 700;
 }
 
-.home-section .container h1 > span {
+.home-section .left-container h1 > span {
     color: var(--accent);
 }
 
-.home-section .container h5 {
+.home-section .left-container h5 {
     font-size: var(--subtitle);
     padding-top: 15px;
     color: var(--primary);
@@ -33,7 +33,7 @@
     font-weight: 500;
 }
 
-.home-section .container p {
+.home-section .left-container p {
     padding-top: 15px;
     font-size: var(--p);
     letter-spacing: normal;
@@ -107,7 +107,7 @@
     color: var(--accent);
 }
 
-.skills-section .container {
+.skills-section .left-container {
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -145,7 +145,7 @@
         text-align: center;
     }
 
-    .skills-section .container {
+    .skills-section .left-container {
         width: 100%;
         margin-top: 2rem;
         display: flex;
@@ -183,7 +183,7 @@
         gap: 2em;
     }
 
-    .skills-section .container {
+    .skills-section .left-container {
         width: 100%;
         display: flex;
         flex-direction: column;
@@ -220,7 +220,7 @@
         gap: 2em;
     }
 
-    .skills-section .container {
+    .skills-section .left-container {
         width: 100%;
         display: flex;
         flex-direction: column;
